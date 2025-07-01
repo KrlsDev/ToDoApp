@@ -1,16 +1,10 @@
 # todo_app
 
-A new Flutter project.
+Hay que tener en cuenta que es un aplicación sin una utilidad real, por lo que cada vez que entréis en vuestra pantalla se debe de constuir desde cero.
 
-## Getting Started
+Para poder hacer un PR a Main debes de haber completado las siguientes tareas
 
-This project is a starting point for a Flutter application.
+- [ ] La pantalla por defecto debe de tener 3 - 5 tareas ya creadas, sin que tengan el check de completado.
+- [ ] El usuario debe de poder crear más tareas.
+- [ ] Se deben de poder poner el check tanto en las tareas por defecto como en las tareas creadas.
 
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
