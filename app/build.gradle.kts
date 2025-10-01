@@ -67,10 +67,14 @@ dependencies {
 
     // Hilt
     implementation("com.google.dagger:hilt-android:2.56.2")
+    implementation("androidx.hilt:hilt-navigation-compose:1.3.0")
     ksp("com.google.dagger:hilt-android-compiler:2.56.2")
 
     //Room
     implementation("androidx.room:room-runtime:$room_version")
     ksp("androidx.room:room-compiler:$room_version")
     implementation("androidx.room:room-ktx:$room_version")
+
+    // Splash Screen
+    implementation("androidx.core:core-splashscreen:1.0.1")
 }

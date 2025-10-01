@@ -1,10 +1,8 @@
 package com.example.todoapp.data.local
 
 import androidx.room.Dao
-import androidx.room.Database
 import androidx.room.Insert
 import androidx.room.Query
-import androidx.room.RoomDatabase
 import com.example.todoapp.domain.model.Task
 import kotlinx.coroutines.flow.Flow
 
