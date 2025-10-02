@@ -12,7 +12,6 @@ class TaskRepositoryImpl @Inject constructor(
 
 
     override suspend fun addTask(task: Task) {
-        //tasksDao.insert(Task(id = 1, text = "Prueba 01", done = false))
         tasksDao.insert(task)
     }
 
