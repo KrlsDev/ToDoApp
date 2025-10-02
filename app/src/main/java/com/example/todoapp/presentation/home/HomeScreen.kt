@@ -1,6 +1,5 @@
 package com.example.todoapp.presentation.home
 
-import android.util.Log
 import androidx.compose.animation.AnimatedVisibility
 import androidx.compose.animation.fadeIn
 import androidx.compose.animation.fadeOut
@@ -48,7 +47,11 @@ fun HomeScreen(modifier: Modifier = Modifier) {
 
     Scaffold(
         floatingActionButton = {
-            AnimatedVisibility(visible = !isAddTaskMenuVisbility, enter = fadeIn(), exit = fadeOut()) {
+            AnimatedVisibility(
+                visible = !isAddTaskMenuVisbility,
+                enter = fadeIn(),
+                exit = fadeOut()
+            ) {
                 FloatingActionButton(
                     onClick = {
                         mainViewModel.showNewTaskDialog()
@@ -71,7 +74,7 @@ fun HomeScreen(modifier: Modifier = Modifier) {
         },
         modifier = Modifier.fillMaxSize()
     ) { innerPadding ->
-        Box() {
+        Box {
 
             LazyColumn {
                 item {
@@ -96,23 +99,21 @@ fun HomeScreen(modifier: Modifier = Modifier) {
                 }
                 items(tasks) { task ->
                     Spacer(Modifier.height(6.dp))
-                    Log.d(
-                        "HomeScreen",
-                        "text: " + task.text + " id: " + task.id + " done: " + task.done
-                    )
                     Card(
                         text = task.text,
                         done = task.done,
                         id = task.id,
                         onToggleTask = { id ->
                             mainViewModel.deleteAndCompleteTask(id)
-                            Log.d("HomeScreen", "id $id borrado")
-
                         }
                     )
                 }
             }
-            AnimatedVisibility(visible = isAddTaskMenuVisbility, enter = fadeIn(), exit = fadeOut()) {
+            AnimatedVisibility(
+                visible = isAddTaskMenuVisbility,
+                enter = fadeIn(),
+                exit = fadeOut()
+            ) {
                 NewTaskDialog(
                     onSend = {
                         mainViewModel.hideNewTaskDialog()
@@ -122,7 +123,7 @@ fun HomeScreen(modifier: Modifier = Modifier) {
                     value = newTaskInput,
                     onValueChange = { newValue ->
                         mainViewModel.updateNewTaskInput(newValue)
-                    },
+                    }, onDismiss = { mainViewModel.hideNewTaskDialog() }
                 )
             }
         }
