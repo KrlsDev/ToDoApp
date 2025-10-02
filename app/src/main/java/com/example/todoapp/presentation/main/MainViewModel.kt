@@ -65,6 +65,7 @@ class MainViewModel @Inject constructor(
 
     fun hideNewTaskDialog() {
         _isAddTaskMenuVisible.value = false
+        _newTaskInput.value = ""
     }
 
     fun addNewTask() {

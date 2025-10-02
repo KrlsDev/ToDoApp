@@ -123,7 +123,9 @@ fun HomeScreen(modifier: Modifier = Modifier) {
                     value = newTaskInput,
                     onValueChange = { newValue ->
                         mainViewModel.updateNewTaskInput(newValue)
-                    }, onDismiss = { mainViewModel.hideNewTaskDialog() }
+                    }, onDismiss = {
+                        mainViewModel.hideNewTaskDialog()
+                    }
                 )
             }
         }

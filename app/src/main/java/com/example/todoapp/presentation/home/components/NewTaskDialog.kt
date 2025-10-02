@@ -68,8 +68,8 @@ fun NewTaskDialog(
                     unfocusedBorderColor = Color.Black,
                     focusedContainerColor = Color.White,
                     unfocusedContainerColor = Color.White,
-                    cursorColor = Color.Black,              // Color del cursor/línea
-                    focusedTextColor = Color.Black,         // Color del texto cuando está enfocado
+                    cursorColor = Color.Black,
+                    focusedTextColor = Color.Black,
                     unfocusedTextColor = Color.Black,
                 ),
                 keyboardOptions = KeyboardOptions(
