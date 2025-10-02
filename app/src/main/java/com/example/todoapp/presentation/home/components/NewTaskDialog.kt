@@ -3,6 +3,7 @@ package com.example.todoapp.presentation.home.components
 import androidx.compose.foundation.BorderStroke
 import androidx.compose.foundation.background
 import androidx.compose.foundation.border
+import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Spacer
@@ -31,6 +32,7 @@ fun NewTaskDialog(
     onSend: () -> Unit,
     value: String,
     onValueChange: (String) -> Unit,
+    onDismiss: () -> Unit,
     modifier: Modifier = Modifier,
 ) {
 
@@ -39,6 +41,7 @@ fun NewTaskDialog(
         modifier = modifier
             .fillMaxSize()
             .background(Color(0x66575454))
+            .clickable { onDismiss() }
     ) {
         Column(
             horizontalAlignment = Alignment.CenterHorizontally,
