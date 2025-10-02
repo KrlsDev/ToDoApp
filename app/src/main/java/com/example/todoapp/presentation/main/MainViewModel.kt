@@ -27,7 +27,7 @@ class MainViewModel @Inject constructor(
     private val _isAddTaskMenuVisible = MutableStateFlow(false)
     val isAddTaskMenuVisible = _isAddTaskMenuVisible.asStateFlow()
 
-    private val _newTaskInput = MutableStateFlow<String>("")
+    private val _newTaskInput = MutableStateFlow("")
     val newTaskInput = _newTaskInput.asStateFlow()
 
     init {
@@ -75,24 +75,5 @@ class MainViewModel @Inject constructor(
             }
         }
     }
-
-    // Añadir tarea de prueba
-//        viewModelScope.launch {
-//            delay(500) // Asegurar que ya estamos observando
-//            addTaskUseCase(Task(id = 0, text = "Prueba01", done = false))
-//            addTaskUseCase(Task(id = 0, text = "Prueba02", done = false))
-//            addTaskUseCase(Task(id = 0, text = "Prueba03", done = false))
-//            addTaskUseCase(Task(id = 0, text = "Prueba04", done = false))
-//            addTaskUseCase(Task(id = 0, text = "Prueba05", done = false))
-//            addTaskUseCase(Task(id = 0, text = "Prueba06", done = false))
-//            addTaskUseCase(Task(id = 0, text = "Prueba07", done = false))
-//            addTaskUseCase(Task(id = 0, text = "Prueba08", done = false))
-//            addTaskUseCase(Task(id = 0, text = "Prueba09", done = false))
-//            addTaskUseCase(Task(id = 0, text = "Prueba10", done = false))
-//            addTaskUseCase(Task(id = 0, text = "Prueba11", done = false))
-//
-//        }
-
-
 
 }

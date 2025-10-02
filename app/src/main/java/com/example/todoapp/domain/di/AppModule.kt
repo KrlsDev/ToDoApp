@@ -1,7 +1,6 @@
 package com.example.todoapp.domain.di
 
 import android.app.Application
-import android.content.Context
 import com.example.todoapp.data.local.TasksDao
 import com.example.todoapp.data.local.TasksDataBase
 import dagger.Module
