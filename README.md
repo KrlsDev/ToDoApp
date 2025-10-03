@@ -20,6 +20,7 @@ https://github.com/user-attachments/assets/1fc8a9ed-7e43-4a1b-bd01-51e40863811a
 -  **Eliminar tareas**: Elimina tareas completadas con un simple gesto
 -  **Persistencia local**: Tus tareas se guardan automáticamente usando Room Database
 -  **Interfaz moderna**: Diseño limpio y responsivo con Jetpack Compose
+-  **Tema claro y oscuro**: Soporte completo para tema claro y oscuro que se adapta a las preferencias del sistema
 -  **Rendimiento optimizado**: Arquitectura eficiente con inyección de dependencias
 
 ##  Tecnologías utilizadas
