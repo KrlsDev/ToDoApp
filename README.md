@@ -62,7 +62,7 @@ git clone https://github.com/KrlsDev/ToDoApp.git
 
 **Carlos Moreno Delgado**
 
-- GitHub: [KrlsDev](https://github.com/tu-usuario)
+- GitHub: [KrlsDev](https://github.com/KrlsDev)
 - LinkedIn: www.linkedin.com/in/carlos-m-d
 - Email: car.mor.delgado@gmail.com
 
