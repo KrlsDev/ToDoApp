@@ -6,10 +6,9 @@ import androidx.compose.foundation.border
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.fillMaxWidth
+import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.shape.RoundedCornerShape
-import androidx.compose.material3.Checkbox
-import androidx.compose.material3.CheckboxColors
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
@@ -36,37 +35,20 @@ fun Card(
         modifier = modifier
             .fillMaxWidth()
             .padding(horizontal = 10.dp, vertical = 5.dp)
+            .height(50.dp)
             .clip(shape = RoundedCornerShape(10.dp))
             .border(
                 shape = RoundedCornerShape(10.dp),
                 border = BorderStroke(1.dp, color = Color.Black),
             )
             .background(color = MaterialTheme.colorScheme.secondary)
-            .clickable{
+            .clickable {
                 onToggleTask(id)
             }
 
     ) {
-        Checkbox(
-            checked = done,
-            onCheckedChange = {
-                onToggleTask(id)
-            },
-            colors = CheckboxColors(
-                uncheckedBoxColor = Color.White,
-                checkedCheckmarkColor = Color.Black,
-                uncheckedCheckmarkColor = Color.Black,
-                checkedBoxColor = Color.White,
-                disabledCheckedBoxColor = Color.Red,
-                disabledUncheckedBoxColor = Color.Red,
-                disabledIndeterminateBoxColor = Color.Red,
-                checkedBorderColor = Color.Black,
-                uncheckedBorderColor = Color.Black,
-                disabledBorderColor = Color.Red,
-                disabledUncheckedBorderColor = Color.Black,
-                disabledIndeterminateBorderColor = Color.Red
-            )
-        )
+
+        CheckCircle(checked = done, onCheckedChange = { onToggleTask(id) })
         Text(
             text = text,
             fontSize = 25.sp,
@@ -76,7 +58,7 @@ fun Card(
             softWrap = false,
             overflow = TextOverflow.Ellipsis,
 
-        )
+            )
 
     }
 }
