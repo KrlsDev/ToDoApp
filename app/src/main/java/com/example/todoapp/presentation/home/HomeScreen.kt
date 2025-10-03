@@ -116,8 +116,8 @@ fun HomeScreen(modifier: Modifier = Modifier) {
             ) {
                 NewTaskDialog(
                     onSend = {
-                        mainViewModel.hideNewTaskDialog()
                         mainViewModel.addNewTask()
+                        mainViewModel.hideNewTaskDialog()
 
                     },
                     value = newTaskInput,
