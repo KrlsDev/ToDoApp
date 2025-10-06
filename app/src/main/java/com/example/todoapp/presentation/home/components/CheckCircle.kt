@@ -31,7 +31,7 @@ fun CheckCircle(checked: Boolean = false, onCheckedChange: () -> Unit = {}) {
             )
             .border(
                 border = BorderStroke(
-                    width = 1.dp,
+                    width = 1.5.dp,
                     color = Color.Black
                 ),
                 shape = CircleShape
