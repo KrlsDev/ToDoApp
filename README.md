@@ -8,11 +8,11 @@ Una aplicación de lista de tareas moderna y minimalista diseñada para ayudarte
 
 ### Añadiendo tareas
 
-https://github.com/user-attachments/assets/b8c7e7c5-038d-4447-a3dc-cb34110c1221
+https://github.com/user-attachments/assets/bb0f71c1-44be-48bc-95b2-558c895f98fc
 
 ### Eliminando tareas
 
-https://github.com/user-attachments/assets/1fc8a9ed-7e43-4a1b-bd01-51e40863811a
+https://github.com/user-attachments/assets/85300a9c-e345-447e-ab7a-61262ffde2ab
 
 ##  Características principales
 
